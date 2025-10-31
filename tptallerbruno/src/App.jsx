@@ -5,6 +5,8 @@ function App() {
     <div className="container text-center mt-4">
 
       <h2 className="mb-4 fw-bold">Sistema de gestión FixFast</h2>
+      <h6 className="mb-4 fw-bold">By: Brambilla, Bruno Ezequiel</h6>
+
 
       <div className="d-grid gap-3 col-6 mx-auto">
         <Link to="/productos" className="btn btn-primary btn-lg">📦 Listado de productos</Link>
