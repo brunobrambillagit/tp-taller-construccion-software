@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
 import { getPedidos } from "../services/pedidoService";
 import { Link } from "react-router-dom";
+import "./Carrito.css";
+
 
 function ListaPedidos() {
   const [pedidos, setPedidos] = useState([]);
@@ -15,7 +17,7 @@ function ListaPedidos() {
 
   return (
     <div>
-      <h2>Listado de Pedidos</h2>
+    <h2 className="titulo-carrito">Listado de pedidos</h2>
 
       {pedidos.length === 0 ? (
         <p>No hay pedidos registrados.</p>

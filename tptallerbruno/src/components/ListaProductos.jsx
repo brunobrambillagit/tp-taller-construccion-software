@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
 import { getProductos, eliminarProducto } from "../services/productoService";
 import { Link } from "react-router-dom";
+import "./Carrito.css";
+
 
 
 function ListaProductos({ onEditar }) {
@@ -20,7 +22,7 @@ function ListaProductos({ onEditar }) {
 
   return (
     <div>
-      <h2>Listado de Productos</h2>
+    <h2 className="titulo-carrito">Listado de productos</h2>
       <table className="table table-bordered table-hover text-center">
         <thead>
           <tr>

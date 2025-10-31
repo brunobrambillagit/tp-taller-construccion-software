@@ -1,0 +1,26 @@
+.container-carrito {
+  padding: 20px;
+  background-color: #f7f7f7;
+  border-radius: 12px;
+}
+
+.table-carrito th {
+  background-color: #222;
+  color: white;
+}
+
+.btn-confirmar {
+  width: 200px;
+}
+
+.btn-volver {
+  width: 200px;
+  position:initial;
+}
+
+.titulo-carrito {
+  padding-bottom: 15px;
+  padding-left: 600px;
+  color: #000000;
+  font-weight: bold;
+}

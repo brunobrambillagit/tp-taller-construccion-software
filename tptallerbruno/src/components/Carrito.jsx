@@ -3,6 +3,8 @@ import { getProductos } from "../services/productoService";
 import { crearPedido } from "../services/pedidoService";
 import { Link } from "react-router-dom";
 import { toast } from "react-toastify";
+import "./Carrito.css";
+
 
 
 function Carrito() {
@@ -60,8 +62,8 @@ function Carrito() {
   };
 
   return (
-    <div>
-      <h2>Carrito de Compras</h2>
+  <div className="container-carrito">
+    <h2 className="titulo-carrito">Carrito de Compras</h2>
 
       {/* ingresar nombre */}
       <input
@@ -133,16 +135,19 @@ function Carrito() {
         )}
       </h4>
 
-      {/* botones */}
-      <button className="btn btn-outline-danger" onClick={vaciarCarrito}>
-        🗑 Vaciar carrito
-      </button>
-      <button className="btn btn-primary" onClick={enviarPedido} disabled={carrito.length === 0}>
-        ✅ Confirmar pedido
-      </button>
-      <Link to="/">
-      <Link to="/" className="btn btn-secondary mt-3">⬅ Volver al menú</Link>
-      </Link>
+      <div className="d-flex justify-content-between mt-3 gap-2">
+        <button className="btn btn-outline-danger" onClick={vaciarCarrito}>
+          🗑 Vaciar carrito
+        </button>
+
+        <button className="btn btn-primary" onClick={enviarPedido} disabled={carrito.length === 0}>
+          ✅ Confirmar pedido
+        </button>
+
+        <Link to="/" className="btn btn-secondary">
+          ⬅ Volver al menú
+        </Link>
+      </div>
     </div>
   );
 }

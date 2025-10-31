@@ -8,8 +8,8 @@ function App() {
 
       <div className="d-grid gap-3 col-6 mx-auto">
         <Link to="/productos" className="btn btn-primary btn-lg">📦 Listado de productos</Link>
-        <Link to="/carrito" className="btn btn-success btn-lg">🛒 Carrito de compras</Link>
-        <Link to="/pedidos" className="btn btn-info btn-lg text-white">📄 Listado de pedidos</Link>
+        <Link to="/carrito" className="btn btn-primary btn-lg">🛒 Carrito de compras</Link>
+        <Link to="/pedidos" className="btn btn-primary btn-lg text-white">📄 Listado de pedidos</Link>
       </div>
 
     </div>
